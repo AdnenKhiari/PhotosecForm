@@ -1,0 +1,51 @@
+
+
+<!-- team section -->
+<section class="team_section">
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-4 col-md-5 detail-box detail_box_common text_center">
+        <div class="heading_container heading_center">
+        <h2>
+            Our creative team
+        </h2>
+        </div>
+        <p>
+        The point of using LoremIt is a long established fact that a reader will be distracted by the readable
+        content
+        of a page when looking at its layout. The point of using Lorem
+        </p>
+    </div>
+    <div class="col-lg-8 col-md-7 team_container text_center">
+        <div class="row">
+        <div *ngFor="let personne of userData" class="col-sm-6 mx-auto">
+            <div class="team_box">
+            <div class="img-box">
+                <img [src]=" personne.image" alt="">
+            </div>
+            <div class="detail-box ">
+                <h5>
+                {{ personne.nom }}
+                </h5>
+                <div class="social-box">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
