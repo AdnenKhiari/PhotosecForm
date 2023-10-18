@@ -17,24 +17,27 @@
             </div>
             <div class="info_contact">
               <div class="contact_link_box">
-                <a href="">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span>
-                    Location
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    Call +01 1234567890
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span>
-                    demo@gmail.com
-                  </span>
-                </a>
+
+
+
+
+
+                <form action="" [formGroup]="contactForm">
+                  <div class="input-group">
+                    <label for="mail">Email</label>
+                    <input formControlName="email" id="mail" type="email">
+                  </div>
+                  <div class="input-group">
+                    <label for="desc">Description</label>
+                    <textarea formControlName="description" id="desc" name="" id="" cols="30" rows="10"></textarea>
+                  </div>
+                  <button  (click)="getData()"> See Data</button>
+                </form>
+
+
+
+
+
               </div>
               <div class="info_social">
                 <a href="">

@@ -3,15 +3,15 @@
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
-          <button onclick="openNav()">
+          <button (click)="openNav()">
             <span class="s-1"> </span>
             <span class="s-2"> </span>
             <span class="s-3"> </span>
           </button>
         </div>
-        <div id="myNav" class="overlay">
+        <div id="myNav" [class]="cl">
           <div class="menu_btn-style ">
-            <button onclick="closeNav()">
+            <button (click)="closeNav()">
               <span class="s-1"> </span>
               <span class="s-2"> </span>
               <span class="s-3"> </span>

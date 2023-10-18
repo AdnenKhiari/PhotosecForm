@@ -133,3 +133,17 @@
     color: #85310c;
   }
   /*# sourceMappingURL=style.css.map */
+
+
+  input,textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+  }
+
+  .input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+  }

@@ -10,6 +10,7 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [AboutUsComponent,PortfolioPageComponent,TeamsPageComponent,NavBarComponent,FooterComponent,TeamsComponent,GalleryComponent,AboutUsComponent]
 })

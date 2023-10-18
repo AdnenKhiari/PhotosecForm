@@ -18,10 +18,12 @@
     </div>
     <div class="col-lg-8 col-md-7 team_container text_center">
         <div class="row">
-        <div *ngFor="let personne of userData" class="col-sm-6 mx-auto">
+            <h2 *ngIf="!error && userData === null">Loading ...</h2>
+            <h2 *ngIf="error">An Error has occured</h2>
+        <div  *ngFor="let personne of userData" class="col-sm-6 mx-auto">
             <div class="team_box">
             <div class="img-box">
-                <img [src]=" personne.image" alt="">
+                <img [src]="personne.url" alt="">
             </div>
             <div class="detail-box ">
                 <h5>

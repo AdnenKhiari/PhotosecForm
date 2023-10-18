@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
+  cl = "overlay"
+
+  openNav(){
+    this.cl = "overlay menu_width"
+  }
+
+  closeNav(){
+    this.cl = "overlay"
+  }
+
 }

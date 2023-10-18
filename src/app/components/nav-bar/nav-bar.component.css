@@ -79,6 +79,7 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    z-index: 1000;
   }
   
   .custom_menu-btn span {
