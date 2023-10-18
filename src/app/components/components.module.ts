@@ -5,6 +5,11 @@ import { FooterComponent } from './footer/footer.component';
 import { TeamsComponent } from './teams/teams.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { TeamsPageComponent } from './teams-page/teams-page.component';
+import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,11 +19,16 @@ import { AboutUsComponent } from './about-us/about-us.component';
     FooterComponent,
     TeamsComponent,
     GalleryComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TeamsPageComponent,
+    PortfolioPageComponent,
+    AboutUsPageComponent,
+    HomePageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  exports: [NavBarComponent,FooterComponent,TeamsComponent,GalleryComponent,AboutUsComponent]
+  exports: [AboutUsComponent,PortfolioPageComponent,TeamsPageComponent,NavBarComponent,FooterComponent,TeamsComponent,GalleryComponent,AboutUsComponent]
 })
 export class ComponentsModule { }
