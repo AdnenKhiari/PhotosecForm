@@ -15,7 +15,7 @@ const routes: Routes = [
   component: TeamsPageComponent
 },
 {
-  path: "us",
+  path: "adnen",
   component: AboutUsPageComponent
 },
 {
