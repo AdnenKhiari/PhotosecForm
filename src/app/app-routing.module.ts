@@ -15,15 +15,9 @@ const routes: Routes = [
   component: TeamsPageComponent
 },
 {
-
   path: "about-adnen123",
-
-
-
   component: AboutUsPageComponent
 }
-
- 
 ];
 
 @NgModule({
