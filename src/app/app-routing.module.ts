@@ -16,7 +16,7 @@ const routes: Routes = [
 },
 {
 
-  path: "about-adnen",
+  path: "about-adnen123",
 
 
 
