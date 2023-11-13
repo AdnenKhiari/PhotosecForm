@@ -19,9 +19,7 @@ const routes: Routes = [
   component: AboutUsPageComponent
 },
 {
-  path: '',
-  component: HomePageComponent
-}
+ 
 ];
 
 @NgModule({
