@@ -16,14 +16,11 @@ const routes: Routes = [
 },
 {
 
-  path: "about-adnen",
-
-
-
+  path: "adnen",
   component: AboutUsPageComponent
 }
 
- 
+
 ];
 
 @NgModule({
